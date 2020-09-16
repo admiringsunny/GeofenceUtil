@@ -14,7 +14,6 @@ import com.google.android.gms.location.GeofencingRequest
 import com.google.android.gms.location.LocationServices
 import com.google.android.gms.tasks.OnCompleteListener
 import com.google.android.gms.tasks.Task
-import com.sunny.learn.geofenceutil.MapsActivity
 import com.sunny.learn.geofenceutil.R
 import com.sunny.learn.geofenceutil.room.LocationDatabase
 import com.sunny.learn.geofenceutil.room.LocationEntity
@@ -37,7 +36,6 @@ class MainActivity : AppCompatActivity(), OnCompleteListener<Void> {
 
 
     private fun initViews() {
-//        startActivity(Intent(this, MapsActivity::class.java));
 
         locationDatabase =
             Room.databaseBuilder(applicationContext, LocationDatabase::class.java, "LocationsDB.db")
